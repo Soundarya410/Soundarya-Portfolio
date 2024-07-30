@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundarya Ramesh's Digital Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #883232;
+        }
+        header {
+            background-color: #33333366;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            
+            top: 0;
+            z-index: 1000;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            color: #f4eded;
+            border-bottom: 2px solid #f1f5f1;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .project, .experience, .education {
+            margin-bottom: 40px;
+        }
+        .skills-list, .experience-list, .education-list, .contact-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li, .experience-list li, .education-list li, .contact-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(133, 117, 117, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            bottom: 0;
+            width: 100%;
+        }
+        .about-content {
+        display: flex;
+        align-items: row;
+        flex-direction: row;
+    }
+        .profile-image {
+        width: 400px;
+        height: 350px;
+        margin-right: 20px;
+        border-radius: 90%;
+        
+    }
+    .about-content p {
+        padding:5vw;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #f1f5f1;
+    }
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 20px; 
+    }
+    .project {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 15px;
+        flex: 1 1 calc(33.333% - 20px); 
+        box-sizing: border-box; 
+    }
+    @media (max-width: 768px) {
+        .project {
+            flex: 1 1 calc(50% - 20px); 
+        }
+    }
+    @media (max-width: 480px) {
+        .project {
+            flex: 1 1 100%; 
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOUNDARYA RAMESH</h1>
+        <p>Building myself for better tomorrow</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.html" target="_blank">Resume</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <img src="sony.jpg" alt="Soundarya Ramesh" class="profile-image">
+                <p>I am a software engineering professional with extensive experience in software quality assurance. I am passionate about developing innovative solutions in the tech industry. I am proficient in multiple programming languages and have hands-on experience with various technologies. Currently, I’m focused on iOS and Android application development.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Full-Stack Restaurant Management Web Application</h3>
+                    <p><strong>Technologies:</strong> NodeJS, Express JS, MongoDB, GITHUB, VS Code, HTML, CSS, EJS, JavaScript (ES6)</p>
+                    <p>Created a website named 'Restaurant Management' for user login, order placement, order processing by restaurant managers, and order preparation by delivery drivers. Deployed the website on the Git server.</p>
+                </div>
+                <div class="project">
+                    <h3>Group Nature Walk Session iOS Application</h3>
+                    <p><strong>Technologies:</strong> Xcode, Swift UI, Firebase, API, JSON</p>
+                    <p>Developed an iOS app for users to log in, manage profiles, view and select nature walk sessions, share information via WhatsApp and email, and purchase tickets.</p>
+                </div>
+                <div class="project">
+                    <h3>Landlord App and Rental App</h3>
+                    <p><strong>Technologies:</strong> Android Studio, OOPs, Kotlin, Firebase</p>
+                    <p>Created an Android app for landlords to log in and add rental properties, storing details in Firebase. Developed a rental app for users to view available properties.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience">
+                <h3 style="color: #f1f5f1">Quality Assurance Engineer</h3>
+                <p style="color: #f1f5f1"><strong style="color: #f1f5f1;">Zoho Corporation Pvt Ltd, Chennai, India</strong><br>Apr. 2021 - Dec. 2023</p>
+                <ul class="experience-list">
+                    <li>Designed and executed over 150 test cases for a variety of software and mobile applications, including the Firewall Analyzer, which led to a 30% improvement in product quality.</li>
+                    <li>Developed expertise in multiple testing methodologies, including penetration testing to identify security weaknesses, performance testing to evaluate application speed and stability, and functional testing to ensure all features worked as intended.</li>
+                    <li>Conducted comprehensive API testing using Postman, verifying REST APIs for both functionality and reliability, which ensured seamless integration and operation across different systems.</li>
+                    <li>Identified and remediated significant security vulnerabilities such as Cross-Site Scripting (XSS), SQL Injection, XML External Entity (XXE), and Remote Code Execution (RCE), enhancing overall application security.</li>
+                    <li>Implemented and validated fixes within product versions, performing rigorous checks to verify the effectiveness of updates and ensuring they met the highest quality standards before deployment.</li>
+                    <li>Developed and tested AWS instances for cloud-based services, creating detailed test cases to ensure the functionality and performance of cloud services integrated with the application.</li>
+                    <li>Implemented test automation using Zoho Pilot, significantly reducing manual testing time by 25% and increasing overall testing efficiency and coverage.</li>
+                    <li>Managed confidential servers and ticket records with a focus on security and data integrity, ensuring accurate tracking and handling of technical issues and requests.</li>
+                    <li>Prepared and presented over 10 product reports to stakeholders, providing valuable insights and data-driven recommendations that improved development processes and decision-making by 20%.</li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+        
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Programming Languages:</strong> Java, C, HTML, CSS, Kotlin, Swift, Python</li>
+                <li><strong>Database Systems:</strong> MS-SQL, PostgreSQL, Firebase Firestore, MongoDB</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript (ES6), React.js</li>
+                <li><strong>Networking:</strong> OSI model, TCP/IP, Firewall Applications, DNS</li>
+                <li><strong>Cloud Computing Platforms:</strong> AWS (EC2)</li>
+                <li><strong>Software Documentation:</strong> Microsoft Office Suite, Zoho Suite</li>
+                <li><strong>IDEs:</strong> VS Code, IntelliJ, Android Studio, XCode</li>
+                <li><strong>APIs:</strong> RESTful APIs, NodeJS APIs</li>
+                <li><strong>Data Formats:</strong> JSON, XML, CSV</li>
+                <li><strong>Test Automation:</strong> Zoho Pilot</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:101519271@georgebrown.ca">101519271@georgebrown.ca</a></li>
+                <li><strong>Phone:</strong> <a href="tel:437-933-4820">437-933-4820</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/soundarya-ramesh-8b05a9309/" target="_blank">Soundarya Ramesh</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Soundarya Ramesh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
